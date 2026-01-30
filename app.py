@@ -3,6 +3,13 @@ import pickle
 import nltk
 from preprocessing import clean
 
+import nltk
+
+nltk.download("punkt")
+nltk.download("punkt_tab")
+nltk.download("stopwords")
+nltk.download("wordnet")
+
 
 # Load the trained model
 with open("spam_email_model.pkl", "rb") as file:
